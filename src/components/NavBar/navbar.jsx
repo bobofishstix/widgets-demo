@@ -1,5 +1,5 @@
 import './navbar.css';
-import Ball from'C:/Users/btyne/Documents/GitHub/widgets-demo/src/components/EightBall/eightBall.jsx';
+import Ball from'../EightBall/eightBall.jsx';
 import React, {  } from 'react';
 const NavBar = () => {
     return (
