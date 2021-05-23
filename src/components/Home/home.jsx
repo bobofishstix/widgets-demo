@@ -3,11 +3,10 @@ import './home.css';
 class Home extends Component {
     state = {  }
     render() { 
-        return (<div className='homescreen'>
+        return (
             <div className='background'>
-            
             </div>
-        </div>);
+        )
     }
 }
  

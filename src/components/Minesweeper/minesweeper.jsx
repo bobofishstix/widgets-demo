@@ -12,7 +12,6 @@ function App() {
     color: 'black',
     verticalAlign: 'top',
     fontSize: '32px',
-    fontFamily: 'Arial, Helvetica, sans-serif;',
     borderLeft: '5px solid #ccc',
     borderTop: '5px solid #ccc',
     borderBottom: '5px solid #333',
@@ -65,7 +64,6 @@ function App() {
 
   const visitCell = (i, j) => {
     if(bombs[i][j] === 'X') {
-      alert("You lost! Generate again!")
       window.location.reload();
     }
     dfsCells(i, j)
@@ -90,9 +88,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className={'title'}> REACT-SWEEPER </div>
-        <div className={'subtext'}> This is a React version of the classic Minesweeper game! Hit <i>Generate New Game</i>!</div>
-
+        <div className={'title'}>Minesweeper</div>
         {bombs.map((arr, index) =>
           <div>
             {arr.map((elem, i) =>
@@ -104,9 +100,11 @@ function App() {
             )}
           </div>
         )}
+        <div className='generate-box'>
         <button
           className={'generate'}
           onClick={() => generateBombs()}>Generate New Game</button>
+          </div>
       </header>
 
     </div>

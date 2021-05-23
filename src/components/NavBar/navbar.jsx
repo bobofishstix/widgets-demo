@@ -1,6 +1,7 @@
 import './navbar.css';
 import Ball from'../EightBall/eightBall.jsx';
 import Mine from '../Minesweeper/minesweeper.jsx'
+import TTT from '../TTT/ttt.jsx';
 import React, {  } from 'react';
 import placeholder from './placeholder.jpg';
 const NavBar = () => {
@@ -12,9 +13,9 @@ const NavBar = () => {
            <Ball> </Ball> 
         </div>
         <div className='widget-box col-3'>
-           <header className='title'> Simon Says</header>
+           <header className='title'> Tic-Tac-Toe</header>
            <img className='widget-preview' alt='Boogaloo' src={placeholder} />
-           {/* <Ball> </Ball>  */}
+           <TTT></TTT>
         </div>
         <div className='widget-box col-3'>
            <header className='title'> Minesweeper</header>
