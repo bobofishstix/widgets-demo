@@ -4,7 +4,7 @@ import "./eightBall.css";
 export default function EightBall() {
   const [question, setQuestion] = useState("");
   const [quote, setQuote] = useState("");
-  const [quotes, setQuotes] = useState(["Yes", "No", "Maybe"]);
+  const [quotes] = useState(["Yes", "No", "Maybe"]);
 
   const getQuote = (e) => {
     e.preventDefault();

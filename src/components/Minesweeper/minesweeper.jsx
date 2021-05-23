@@ -45,14 +45,28 @@ function Minesweeper() {
         if (bombArr[i][j] !== "X") {
           let sum = 0;
 
-          if (i > 0 && bombArr[i - 1][j] === "X") sum++;
-          if (i < bombArr.length - 1 && bombArr[i + 1][j] === "X") sum++;
-          if (j < bombArr.length - 1 && bombArr[i][j + 1] === "X") sum++;
-          if (j > 0 && bombArr[i][j - 1] === "X") sum++;
-          if (i < bombArr.length - 1 && j > 0 && bombArr[i + 1][j - 1] === "X") sum++;
-          if (i < bombArr.length - 1 && j < bombArr.length - 1 && bombArr[i + 1][j + 1] === "X") sum++;
-          if (i > 0 && j > 0 && bombArr[i - 1][j - 1] === "X") sum++;
-          if (i > 0 && j < bombArr.length - 1 && bombArr[i - 1][j + 1] === "X") sum++;
+          try {
+            var notLastRow = i < bombArr.length - 1;
+            var notLastColumn = j < bombArr.length - 1;
+            var isAbove = i > 0 && bombArr[i - 1][j] === "X";
+            var isBelow = i < bombArr.length - 1 && bombArr[i + 1][j] === "X";
+            var isRight = bombArr[i][j + 1] === "X";
+            var isLeft = bombArr[i][j - 1] === "X";
+            var isUpLeft = bombArr[i - 1][j - 1] === "X";
+            var isDownRight = bombArr[i + 1][j + 1] === "X";
+            var isDownLeft = bombArr[i + 1][j - 1] === "X";
+            var isUpRight = bombArr[i - 1][j + 1] === "X";
+          } catch (e) {
+            continue;
+          }
+          if (i > 0 && isAbove) sum++;
+          if (notLastRow && isBelow) sum++;
+          if (notLastColumn && isRight) sum++;
+          if (j > 0 && isLeft) sum++;
+          if (notLastColumn && j > 0 && isDownLeft) sum++;
+          if (notLastRow && notLastColumn && isDownRight) sum++;
+          if (i > 0 && j > 0 && isUpLeft) sum++;
+          if (i > 0 && notLastColumn && isUpRight) sum++;
 
           bombArr[i][j] = sum;
         }
@@ -99,7 +113,7 @@ function Minesweeper() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="minesweeper-container">
         <div className={"title"}>Minesweeper</div>
         {bombs.map((arr, index) => (
           <div>
@@ -115,7 +129,7 @@ function Minesweeper() {
             Generate New Game
           </button>
         </div>
-      </header>
+      </div>
     </div>
   );
 }

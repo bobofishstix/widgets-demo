@@ -6,3 +6,9 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+@media (max-width: 800px) {
+  .global {
+    overflow: scroll;
+  }
+}
