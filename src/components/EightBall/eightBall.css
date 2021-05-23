@@ -6,4 +6,15 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  background-color: black;
+}
+#inner-ball {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }

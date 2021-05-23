@@ -5,7 +5,7 @@ class Home extends Component {
     render() { 
         return (<div className='homescreen'>
             <div className='background'>
-             Hello!
+            
             </div>
         </div>);
     }

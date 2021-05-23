@@ -1,23 +1,25 @@
 import './navbar.css';
 import Ball from'../EightBall/eightBall.jsx';
 import React, {  } from 'react';
+import placeholder from './placeholder.jpg';
 const NavBar = () => {
     return (
-    <div className='navbarContainer'>
-     <div className='row'>
-        <div className='col-1'></div>
-        <div className='widget-box col-3'id='widget-box-1'>
-           <label> Magic 8 Ball</label>
-           <Ball> </Ball>
+    <div className='navbar-container'>
+        <div className='widget-box col-3'>
+           <header className='title'> Magic 8 Ball</header>
+           <img className='widget-preview' src={placeholder} alt='Boogaloo' />
+           {/* <Ball> </Ball>  */}
         </div>
-        <div className='widget-box col-4'id='widget-box-2'>
-           This is also a test
+        <div className='widget-box col-3'>
+           <header className='title'> Simon Says</header>
+           <img className='widget-preview' alt='Boogaloo' src={placeholder} />
+           {/* <Ball> </Ball>  */}
         </div>
-        <div className='widget-box col-3'id='widget-box-3'>
-            So is this
+        <div className='widget-box col-3'>
+           <header className='title'> Megatron</header>
+           <img className='widget-preview' alt='Boogaloo' src={placeholder} />
+           {/* <Ball> </Ball>  */}
         </div>
-        <div className='col-1'></div>
-     </div>
     </div>
     );
 }

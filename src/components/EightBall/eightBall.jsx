@@ -38,7 +38,9 @@ export default function App() {
                     </button>
             </form>
             <div className="ball">
-                <p>{quote}</p>
+                <div id='inner-ball'>
+                    <p>{quote}</p>
+                </div>
             </div>
                 
 

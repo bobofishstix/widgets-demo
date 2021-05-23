@@ -1,11 +1,27 @@
 .navbar-container {
   display: flex;
   width: 100%;
+  background-color: red;
+  justify-content: space-between;
 }
 .widget-box {
   color: black;
+  background-color: yellow;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-#widget-box-1 {
-  color: teal;
-  background-color: violet;
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.widget-preview {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+  padding: 5%;
 }
