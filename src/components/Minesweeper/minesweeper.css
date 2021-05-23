@@ -2,20 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .title {
   color: black;
   font-size: 44px;
   cursor: pointer;
-}
-.subtext {
-  color: Black;
-  cursor: pointer;
-  margin-bottom: 10px;
 }
 
 .generate {
