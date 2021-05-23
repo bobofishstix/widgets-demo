@@ -13,11 +13,13 @@ import "./styles/ttt-buttons.css";
 class TTT extends React.Component {
   render() {
     return (
-      <div className="app">
-        <BrowserRouter>
+      <div className="ttt-container">
+        {/* <Scoreboard /> */}
+        {/* <Board /> */}
+        {/* <BrowserRouter>
           <Route exact path="/" component={Scoreboard} />
           <Route path="/board" component={Board} />
-        </BrowserRouter>
+        </BrowserRouter> */}
       </div>
     );
   }

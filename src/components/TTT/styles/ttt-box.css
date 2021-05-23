@@ -1,8 +1,14 @@
 .board__box {
-  display: absolute;
-  width: 100%;
   font-size: 32px;
   color: black;
   background-color: white;
   border: 1px solid gray;
+}
+
+.ttt_board {
+  padding: 50px 50px;
+}
+
+.placeholder {
+  color: rgb(239, 239, 239);
 }

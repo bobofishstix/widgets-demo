@@ -58,13 +58,12 @@ export class Board extends React.Component {
     }
     return (
       <>
-        <Link to="/" className="board-link">
-          Go back to scoreboard
-        </Link>
         <div className="board-wrapper">
+          <Link to="/ttt" className="board-link">
+            Go back to scoreboard
+          </Link>
           <div className="board">
             <h2 className="board-heading">{status}</h2>
-
             <div className="board-row">
               <Box value={this.state.boxes[0]} onClick={() => this.handleBoxClick(0)} />
 
