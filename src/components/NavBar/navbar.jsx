@@ -1,5 +1,6 @@
 import './navbar.css';
 import Ball from'../EightBall/eightBall.jsx';
+import Mine from '../Minesweeper/minesweeper.jsx'
 import React, {  } from 'react';
 import placeholder from './placeholder.jpg';
 const NavBar = () => {
@@ -8,7 +9,7 @@ const NavBar = () => {
         <div className='widget-box col-3'>
            <header className='title'> Magic 8 Ball</header>
            <img className='widget-preview' src={placeholder} alt='Boogaloo' />
-           {/* <Ball> </Ball>  */}
+           <Ball> </Ball> 
         </div>
         <div className='widget-box col-3'>
            <header className='title'> Simon Says</header>
@@ -16,9 +17,9 @@ const NavBar = () => {
            {/* <Ball> </Ball>  */}
         </div>
         <div className='widget-box col-3'>
-           <header className='title'> Megatron</header>
+           <header className='title'> Minesweeper</header>
            <img className='widget-preview' alt='Boogaloo' src={placeholder} />
-           {/* <Ball> </Ball>  */}
+           <Mine></Mine>
         </div>
     </div>
     );
