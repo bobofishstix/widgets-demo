@@ -28,18 +28,18 @@ export default function App() {
                         What do you wish to know?
                     </label>
                     <br></br>
-                    <input value={question} placeholder='Ask Away'
+                    <input value={question} placeholder='Yes or No Questions'
                             onChange={(e) => setQuestion(e.target.value)} />
-                    
                     
                 </div>
                     <button type="submit">
                         Discover the Truth
                     </button>
             </form>
+            <br></br>
             <div className="ball">
                 <div id='inner-ball'>
-                    <p>{quote}</p>
+                    <p className='answer'>{quote}</p>
                 </div>
             </div>
                 

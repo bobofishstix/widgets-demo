@@ -1,7 +1,7 @@
 .navbar-container {
   display: flex;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   justify-content: space-between;
 }
 .widget-box {
@@ -24,4 +24,11 @@
   width: 200px;
   height: 200px;
   padding: 5%;
+}
+@media (max-width: 800px) {
+  .navbar-container {
+    flex-direction: column;
+    width: max-content;
+    margin: auto;
+  }
 }

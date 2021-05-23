@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className='global container-fluid'>
+    <div className='global'>
       <NavBar></NavBar> 
       <Home></Home> 
     </div>
