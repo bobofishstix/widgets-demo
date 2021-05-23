@@ -1,3 +1,7 @@
+.question-text {
+  text-align: center;
+}
+
 .ball {
   border: 2px solid black;
   border-radius: 50%;
