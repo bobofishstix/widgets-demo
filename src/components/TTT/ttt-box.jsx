@@ -1,4 +1,6 @@
 import React from "react";
+import './styles/ttt-buttons.css';
+import './styles/ttt-box.css';
 
 export const Box = (props) => {
   return (

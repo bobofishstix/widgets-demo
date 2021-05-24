@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Storage } from "./storage.js";
 import { Box } from "./ttt-box.jsx";
 import * as utils from "./utils.js";
+import './styles/ttt-board.css';
+
 
 export class Board extends React.Component {
   constructor(props) {
