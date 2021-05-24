@@ -1,6 +1,6 @@
-import React from 'react';
-import { slide as Menu } from 'react-burger-menu';
-import './sidebar.css';
+import React from "react";
+import { slide as Menu } from "react-burger-menu";
+import "./sidebar.css";
 
 export default () => {
   return (
