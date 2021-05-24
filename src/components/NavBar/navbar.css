@@ -22,9 +22,6 @@
 }
 @media (max-width: 800px) {
   .navbar-container {
-    flex-direction: column;
-    width: max-content;
-    height: 100%;
-    margin: auto;
+    display: none;
   }
 }
