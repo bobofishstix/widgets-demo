@@ -116,7 +116,7 @@ function Minesweeper() {
       <div className="minesweeper-container">
         <div className={"title"}>Minesweeper</div>
         {bombs.map((arr, index) => (
-          <div>
+          <div className='minesweeper-row'>
             {arr.map((elem, i) => (
               <div onClick={() => visitCell(index, i)} style={visited[index][i] === 0 ? buttonStyle : visitStyle}>
                 {visited[index][i] === 0 ? null : bombs[index][i] === 0 ? "" : bombs[index][i]}
