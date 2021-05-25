@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+
+* {
+  font-family: ZCOOL KuaiLe;
+}
 .bm-burger-button {
   position: fixed;
   width: 36px;
@@ -32,6 +37,10 @@
   background: #373737;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  border: 2px solid #373737;
+}
+.heading {
+  color: #36fe00;
 }
 
 .bm-morph-shape {
@@ -45,15 +54,15 @@
 
 .bm-item {
   display: inline-block;
-  color: #d1d1d1;
+  -webkit-text-fill-color: #00b5ff;
   margin-bottom: 10px;
   text-align: left;
-  text-decoration: none;
+  -webkit-text-stroke: 0.5px #fe4900;
   transition: color 0.2s;
 }
 
 .bm-item:hover {
-  color: #ffffff;
+  color: #c800fe;
 }
 
 .bm-overlay {

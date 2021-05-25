@@ -18,7 +18,7 @@ export default function EightBall() {
     <div>
       <form onSubmit={getQuote}>
         <div className="question-text">
-          <label>What do you wish to know?</label>
+          <label className='label'>What do you wish to know?</label>
           <br></br>
           <input value={question} placeholder="Yes or No Questions" onChange={(e) => setQuestion(e.target.value)} />
           <br />

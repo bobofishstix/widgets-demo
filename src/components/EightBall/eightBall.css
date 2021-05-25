@@ -1,6 +1,9 @@
 .question-text {
   text-align: center;
 }
+.label {
+  font-size: 24px;
+}
 
 .ball {
   border: 2px solid black;

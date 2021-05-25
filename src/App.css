@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url("./Image.jpg");
+  background-image: url("./Background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -16,8 +16,9 @@
 .main {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background-color: hsla(0, 0%, 75%, 0.8);
 }

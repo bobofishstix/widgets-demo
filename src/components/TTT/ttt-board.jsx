@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Storage } from "./storage.js";
 import { Box } from "./ttt-box.jsx";
 import * as utils from "./utils.js";
@@ -12,7 +11,6 @@ export class Board extends React.Component {
 
     this.state = {
       boxes: Array(9).fill(null),
-      history: [],
       xIsNext: true,
     };
   }
@@ -21,7 +19,6 @@ export class Board extends React.Component {
 
   handleBoxClick(index) {
     const boxes = this.state.boxes.slice();
-    let history = this.state.history;
     if (utils.findWinner(boxes) || boxes[index]) {
       return;
     }
@@ -29,10 +26,8 @@ export class Board extends React.Component {
       return;
     }
     boxes[index] = this.state.xIsNext ? "x" : "o";
-    history.push(this.state.xIsNext ? "x" : "o");
     this.setState({
       boxes: boxes,
-      history: history,
       xIsNext: !this.state.xIsNext,
     });
   }
@@ -40,7 +35,6 @@ export class Board extends React.Component {
   handleBoardRestart = () => {
     this.setState({
       boxes: Array(9).fill(null),
-      history: [],
       xIsNext: true,
     });
   };
@@ -61,9 +55,6 @@ export class Board extends React.Component {
     return (
       <>
         <div className="board-wrapper">
-          <Link to="/ttt" className="board-link">
-            Go back to scoreboard
-          </Link>
           <div className="board">
             <h2 className="board-heading">{status}</h2>
             <div className="board-row">
@@ -90,31 +81,12 @@ export class Board extends React.Component {
               <Box value={this.state.boxes[8]} onClick={() => this.handleBoxClick(8)} />
             </div>
           </div>
-
-          <div className="board-history">
-            <h2 className="board-heading">Moves history:</h2>
-
-            <ul className="board-historyList">
-              {this.state.history.length === 0 && <span>No moves to show.</span>}
-
-              {this.state.history.length !== 0 &&
-                this.state.history.map((move, index) => {
-                  return (
-                    <li key={index}>
-                      Move {index + 1}: <strong>{move}</strong>
-                    </li>
-                  );
-                })}
-            </ul>
-          </div>
-
-          {winner && (
             <div className="board-footer">
               <button className="btn" onClick={this.handleBoardRestart}>
                 Start new game
               </button>
             </div>
-          )}
+
         </div>
       </>
     );

@@ -1,4 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
 .background {
   width: 100vw;
   height: 100vh;
+}
+.home-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fe4900;
+}
+.home-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #c800fe;
+}
+.home-container {
+  font-family: ZCOOL KuaiLe;
 }
