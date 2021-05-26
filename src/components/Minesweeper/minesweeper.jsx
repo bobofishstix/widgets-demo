@@ -6,8 +6,8 @@ function Minesweeper() {
   const [visited, setVisited] = useState([]);
 
   const buttonStyle = {
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
     backgroundColor: "#888",
     color: "black",
     verticalAlign: "top",
@@ -19,8 +19,8 @@ function Minesweeper() {
     display: "inline-block",
   };
   const visitStyle = {
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
     backgroundColor: "#555",
     color: "white",
     fontWeight: "bold",

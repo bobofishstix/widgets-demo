@@ -1,10 +1,10 @@
 import "./navbar.css";
 import React from "react";
 // import placeholder from "./placeholder.jpg";
-import tttpic from "./TTT.jpg";
-import eightballpic from "./eightball.jpg";
-import minesweeperpic from './sweeper.jpg';
-import homebutton from './home.jpg'
+import tttpic from "./NavPics/TTT.jpg";
+import eightballpic from "./NavPics/eightball.jpg";
+import minesweeperpic from './NavPics/sweeper.jpg';
+import homebutton from './NavPics/home.jpg'
 const NavBar = () => {
   return (
     <div className="navbar-container">
