@@ -5,30 +5,6 @@ function Minesweeper() {
   const [bombs, setBombs] = useState([]);
   const [visited, setVisited] = useState([]);
 
-  const buttonStyle = {
-    width: 30,
-    height: 30,
-    backgroundColor: "#888",
-    color: "black",
-    verticalAlign: "top",
-    fontSize: "32px",
-    borderLeft: "5px solid #ccc",
-    borderTop: "5px solid #ccc",
-    borderBottom: "5px solid #333",
-    borderRight: "5px solid #333",
-    display: "inline-block",
-  };
-  const visitStyle = {
-    width: 30,
-    height: 30,
-    backgroundColor: "#555",
-    color: "white",
-    fontWeight: "bold",
-    border: "1px solid black",
-    verticalAlign: "top",
-    fontSize: "32px",
-    display: "inline-block",
-  };
 
   const generateBombs = () => {
     let bombArr = Array(10)
@@ -118,9 +94,9 @@ function Minesweeper() {
         {bombs.map((arr, index) => (
           <div className='minesweeper-row'>
             {arr.map((elem, i) => (
-              <div onClick={() => visitCell(index, i)} style={visited[index][i] === 0 ? buttonStyle : visitStyle}>
+              <button onClick={() => visitCell(index, i)} className={visited[index][i] === 0 ? 'button-style' : 'visit-style'}>
                 {visited[index][i] === 0 ? null : bombs[index][i] === 0 ? "" : bombs[index][i]}
-              </div>
+              </button>
             ))}
           </div>
         ))}

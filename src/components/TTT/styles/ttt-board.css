@@ -5,6 +5,8 @@
   text-align: center;
   align-items: center;
   margin: auto;
+  width: 100vw;
+  height: auto;
 }
 
 .board-row {
@@ -18,9 +20,6 @@
   font: 700 18px sans-serif;
   list-style-type: none;
   padding: 5% 0;
-}
-.board-history-list {
-  list-style-type: none;
 }
 
 .board-footer {
