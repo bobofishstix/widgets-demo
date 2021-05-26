@@ -1,11 +1,11 @@
 .board-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  padding: 0%;
   text-align: center;
   align-items: center;
   margin: auto;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -17,11 +17,12 @@
 }
 
 .board-heading {
-  font: 700 18px sans-serif;
+  margin-bottom: -50px;
   list-style-type: none;
-  padding: 5% 0;
+  padding: 0% 0;
 }
 
 .board-footer {
   width: 100%;
+  margin-bottom: 0%;
 }

@@ -9,7 +9,7 @@
 
 @media (max-width: 800px) {
   .global {
-    overflow: scroll;
+    overflow: hidden;
   }
 }
 
