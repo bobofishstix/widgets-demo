@@ -18,7 +18,7 @@ function App() {
         <br></br>
         <Router>
           <div className="main">
-            <Route path="/home" exact component={Home} />
+            <Route path="/" exact component={Home} />
             <Route path="/minesweeper" exact component={Minesweeper} />
             <Route path="/ball" exact component={EightBall} />
             <Route path="/ttt" exact component={Board} />

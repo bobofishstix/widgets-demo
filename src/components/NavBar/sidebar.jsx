@@ -7,7 +7,7 @@ function Sidebar () {
     
     <Menu>
       <h1 className="heading">Wacky Widget Warehouse</h1>
-      <a className="menu-item" href="/home">
+      <a className="menu-item" href="/">
         Home
       </a>
       <a className="menu-item" href="/ball">

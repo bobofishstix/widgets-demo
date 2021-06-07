@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <div className="navbar-container">
       <div>
-        <a href='/home'><img className='home-button' src={homebutton} alt='Home Button' /></a>
+        <a href='/'><img className='home-button' src={homebutton} alt='Home Button' /></a>
       </div>
       <div className="widget-box">
         <header className="title"> Magic 8 Ball</header>
